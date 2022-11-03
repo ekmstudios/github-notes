@@ -1,5 +1,83 @@
 # Git and GitHub Cheat Sheet
 
+
+## git config command
+git config --global user.name "Your username"
+git config --global user.email "Your email"
+
+*Note: Using global ensures that every project on your computer will use those configurations
+
+## Initializing a project
+
+- Using the terminal, navigate to the location where you want to initialize the project.
+- Run `git init`. You should receive a message similar to the following: "Initialized empty Git repository in `folder location`.
+- Run `ls -la` command to display all the files created in the folder.
+
+## Staging Files
+
+- `git add FILENAME` - adds a specific filename
+- `git add --all` - adds all of the files
+- `git add -A` - is shorthand for adding all the files to staging
+- `git add .` is even more shortand for adding all files to staging (only available on Linux)
+
+Then commit what you have added to staging with the following:
+- `git commit -m "My Commit"` - make your message a descriptor for what you are committing
+
+Run `git log` to see a summary of what you've done.
+
+## Git Environments
+
+3 environments
+- Working
+- Staging
+- Commit
+
+File States
+- Tracked
+- Untracked - files that have not been added to the latest commit
+
+Tracked files
+- unmodified - unmodified since the last commit
+- modified - files have been changed since the last commit
+- staged
+
+Discarding changes 
+If you make changes to a file or files, use the restore command.
+
+If you have made changes but not yet added to staging, then use one of the following:
+- `git restore FILENAME` - restores a specific filename
+- `git restore .` - restores all files
+- `git checkout .` - an older version of the restore command
+
+If you have made changes to a file and already added to staging, then use 
+- `git resore --staged FILENAME` - use to move one file out of staging back into working
+- `git retore --staged .` - moves all files out of staging and back into the working environment.
+
+## Ignoring Files
+
+Types of files you would want to ignore when committing:
+- Files with sensitive information
+- Files with personal notes
+- Files with system files
+
+Use .gitignore to specify the type of files you want to ignore.
+
+Can also create a global ignore file that will work globally.
+
+- `git config --global core.ecludesfile (file)`
+
+### Clearing Cache
+
+- `git rm - --cached .`
+
+
+## Deleting and Renaming Files
+
+Two ways to delete files managed by Git
+
+
+
+
 Using lab.github.com
 
 github learning lab
