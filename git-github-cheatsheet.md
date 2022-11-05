@@ -1,19 +1,21 @@
 # Git and GitHub Cheat Sheet
 
 
-## git config command
+## Working with Git
+
+### git config command
 git config --global user.name "Your username"
 git config --global user.email "Your email"
 
 *Note: Using global ensures that every project on your computer will use those configurations
 
-## Initializing a project
+### Initializing a project
 
 - Using the terminal, navigate to the location where you want to initialize the project.
 - Run `git init`. You should receive a message similar to the following: "Initialized empty Git repository in `folder location`.
 - Run `ls -la` command to display all the files created in the folder.
 
-## Staging Files
+### Staging Files
 
 - `git add FILENAME` - adds a specific filename
 - `git add --all` - adds all of the files
@@ -25,7 +27,7 @@ Then commit what you have added to staging with the following:
 
 Run `git log` to see a summary of what you've done.
 
-## Git Environments
+### Git Environments
 
 3 environments
 - Working
@@ -53,7 +55,7 @@ If you have made changes to a file and already added to staging, then use
 - `git resore --staged FILENAME` - use to move one file out of staging back into working
 - `git retore --staged .` - moves all files out of staging and back into the working environment.
 
-## Ignoring Files
+### Ignoring Files
 
 Types of files you would want to ignore when committing:
 - Files with sensitive information
@@ -66,14 +68,46 @@ Can also create a global ignore file that will work globally.
 
 - `git config --global core.ecludesfile (file)`
 
-### Clearing Cache
+#### Clearing Cache
 
 - `git rm - --cached .`
 
 
-## Deleting and Renaming Files
+### Deleting and Renaming Files
 
 Two ways to delete files managed by Git
+
+
+### Differences
+
+
+### Changing History
+
+
+### Branches
+
+
+### Merge Conflicts
+
+
+### git stash and git clean commands
+
+
+## Working with GitHub
+
+### Pushing to GitHub
+
+
+### GitHub options
+
+
+### Pull requests
+
+
+### Organizing projects
+
+
+### Syncing GitHub
 
 
 
